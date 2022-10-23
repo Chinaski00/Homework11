@@ -26,6 +26,7 @@ public class Main {
             return dayDistance = 1;
         } if (distanceClient <= 60) {
             return dayDistance = 2;
+        } if (distanceClient <= 100){
         }
         return dayDistance = 3;
     }
