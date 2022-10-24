@@ -6,23 +6,23 @@ import java.util.Scanner;
 public class Main {
     public static void checkingTheYear(int checkYear) {
         if ((checkYear % 4 == 0) && checkYear % 100 != 0) {
-            System.out.println(checkYear + " - високосный год.");
+            System.out.println(checkYear + " - РІРёСЃРѕРєРѕСЃРЅС‹Р№ РіРѕРґ.");
         } else if ((checkYear % 4 == 0) && (checkYear % 100 == 0) && (checkYear % 400 == 0)) {
-            System.out.println(checkYear + " - високосный год.");
+            System.out.println(checkYear + " - РІРёСЃРѕРєРѕСЃРЅС‹Р№ РіРѕРґ.");
         } else {
-            System.out.println(checkYear + " - не високосный год.");
+            System.out.println(checkYear + " - РЅРµ РІРёСЃРѕРєРѕСЃРЅС‹Р№ РіРѕРґ.");
         }
     }
 
     public static void checkPhoneSettings(int checkYears, int checkOS) {
         if (checkOS == 0 && checkYears <= 2022) {
-            System.out.println("Установите версию приложения для iOS по ссылке.");
+            System.out.println("РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РІРµСЂСЃРёСЋ РїСЂРёР»РѕР¶РµРЅРёСЏ РґР»СЏ iOS РїРѕ СЃСЃС‹Р»РєРµ.");
         } else if (checkOS == 0 && checkYears > 2022) {
-            System.out.println("Установите Lite версию приложения для iOS по ссылке");
+            System.out.println("РЈСЃС‚Р°РЅРѕРІРёС‚Рµ Lite РІРµСЂСЃРёСЋ РїСЂРёР»РѕР¶РµРЅРёСЏ РґР»СЏ iOS РїРѕ СЃСЃС‹Р»РєРµ");
         } else if (checkOS == 1 && checkYears <= 2022) {
-            System.out.println("Установите версию приложения для Android по ссылке.");
+            System.out.println("РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РІРµСЂСЃРёСЋ РїСЂРёР»РѕР¶РµРЅРёСЏ РґР»СЏ Android РїРѕ СЃСЃС‹Р»РєРµ.");
         } else {
-            System.out.println("Установите Lite версию приложения для Android по ссылке");
+            System.out.println("РЈСЃС‚Р°РЅРѕРІРёС‚Рµ Lite РІРµСЂСЃРёСЋ РїСЂРёР»РѕР¶РµРЅРёСЏ РґР»СЏ Android РїРѕ СЃСЃС‹Р»РєРµ");
         }
     }
 
@@ -42,18 +42,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Задача 1
+        //Р—Р°РґР°С‡Р° 1
         int year = 2002;
         checkingTheYear(year);
 
-        //Задача 2
+        //Р—Р°РґР°С‡Р° 2
         int clientOS2 = 1;
         int currentYear = 2022;
         checkPhoneSettings(currentYear, clientOS2);
 
-        //Задача 3
+        //Р—Р°РґР°С‡Р° 3
         int deliveryDistance = checkDistanceClient(500);
-        System.out.println("Потребутся дней для доставки: " + deliveryDistance);
+        System.out.println("РџРѕС‚СЂРµР±СѓС‚СЃСЏ РґРЅРµР№ РґР»СЏ РґРѕСЃС‚Р°РІРєРё: " + deliveryDistance);
 
     }
 }
